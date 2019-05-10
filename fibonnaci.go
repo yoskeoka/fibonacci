@@ -4,7 +4,7 @@
 // f(n) = f(n-1) + f(n-2) [n > 1]
 package fibonacci
 
-// FibR recurret implementation
+// FibR recursion implementation
 func FibR(n int) int {
 	if n == 0 {
 		return 0
@@ -17,7 +17,7 @@ func FibR(n int) int {
 	return FibR(n-1) + FibR(n-2)
 }
 
-// FibRM recurret implementation + memoize
+// FibRM recursion implementation + memoize
 func FibRM(n int) int {
 	memo := make(map[int]int, n)
 	memo[0] = 0
